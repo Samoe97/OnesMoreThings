@@ -30,7 +30,7 @@ SR = 16000
 # "it is time for one more thing"). Picks: any line where a host introduces their own pick.
 ANCHOR = re.compile(r"\b(?:(?:we(?:'ll| will)? be|we(?:'re| are)|come|coming|and we(?:'re| are)) back,? (?:for|with|to|in time for) (?:the )?one more thing|time for (?:the )?one more thing)", re.I)
 PICK = re.compile(r"\b(?:my|your|her|his|their|what's your|what is your) (?:very )?one more thing\b|\bone more thing (?:is|this week)\b", re.I)
-PROMPT = "Triple Click, a games podcast with Kirk Hamilton, Jason Schreier, and Maddy Meyers."  # never include the phrase itself: Whisper echoes prompts
+PROMPT = "Triple Click, a games podcast with Kirk Hamilton, Jason Schreier, and Maddy Myers."  # never include the phrase itself: Whisper echoes prompts
 
 ap = argparse.ArgumentParser()
 ap.add_argument("--limit", type=int, default=0)
