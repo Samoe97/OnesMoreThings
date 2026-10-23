@@ -1,0 +1,357 @@
+{
+ "the count of monte cristo alexendre dumas": {
+  "creator": "Alexandre Dumas",
+  "year": 1844
+ },
+ "iran anthony bourdain parts unknown 2014": {
+  "title": "Parts Unknown: Iran",
+  "search": "Anthony Bourdain: Parts Unknown",
+  "type": "tv",
+  "year": 2014,
+  "creator": "Anthony Bourdain"
+ },
+ "suno ai music and the bad future adam neely youtube nebula": {
+  "title": "Suno, AI Music, and the Bad Future",
+  "creator": "Adam Neely",
+  "type": "video"
+ },
+ "metropolis 1927 as re edited in 1984 by giorgio moroder": {
+  "title": "Metropolis (Giorgio Moroder 1984 edit)",
+  "search": "Metropolis",
+  "year": 1927,
+  "type": "movie"
+ },
+ "e r max": {
+  "search": "ER",
+  "year": 1994
+ },
+ "slough house books 5 8 mick harron": {
+  "title": "Slough House (Books 5-8)",
+  "search": "Slough House",
+  "creator": "Mick Herron",
+  "type": "book"
+ },
+ "slow horses mick herron": {
+  "year": 2010
+ },
+ "the words of radiance brandon sanderson": {
+  "search": "Words of Radiance"
+ },
+ "james percival everett": {
+  "year": 2024
+ },
+ "les miserables 2012": {
+  "search": "Les Misérables",
+  "year": 2012
+ },
+ "blink 182 live at citi field": {
+  "title": "Blink-182: Live at Citi Field",
+  "creator": "Blink-182",
+  "type": "music",
+  "enrich": false
+ },
+ "master chef junior": {
+  "search": "MasterChef Junior"
+ },
+ "master chef": {
+  "search": "MasterChef"
+ },
+ "lois mcmaster bujold s fantasy novels the curse of chalion 2001 paladin of souls 2003 the sharing knife 2006 9": {
+  "title": "Lois McMaster Bujold’s fantasy novels",
+  "creator": "Lois McMaster Bujold",
+  "summary": "Includes The Curse of Chalion (2001), Paladin of Souls (2003), and The Sharing Knife (2006-9).",
+  "type": "book",
+  "enrich": false
+ },
+ "hades 1": {
+  "search": "Hades",
+  "year": 2020
+ },
+ "fiasco jason morningstar": {
+  "year": 2009,
+  "creator": "Jason Morningstar",
+  "type": "game",
+  "enrich": false
+ },
+ "eiyuden chronicles": {
+  "search": "Eiyuden Chronicle"
+ },
+ "shogun": {
+  "search": "Shōgun",
+  "year": 2024,
+  "type": "tv"
+ },
+ "true detective night country max": {
+  "search": "True Detective",
+  "year": 2024,
+  "type": "tv"
+ },
+ "oppenheimer in 70mm": {
+  "search": "Oppenheimer",
+  "year": 2023,
+  "type": "movie"
+ },
+ "scavenger s reign max": {
+  "search": "Scavengers Reign",
+  "year": 2023,
+  "type": "tv"
+ },
+ "mr and mrs smith 2024 amazon prime": {
+  "search": "Mr. & Mrs. Smith",
+  "year": 2024,
+  "type": "tv"
+ },
+ "ace attorney 4 apollo justice": {
+  "search": "Apollo Justice: Ace Attorney"
+ },
+ "futureproof 9 rules for humans in the age of automation kevin roose 2021": {
+  "title": "Futureproof",
+  "search": "Futureproof",
+  "creator": "Kevin Roose",
+  "year": 2021,
+  "type": "book"
+ },
+ "grand theft auto 5": {
+  "search": "Grand Theft Auto V"
+ },
+ "mcu joanna robinson dave gonzales gavin edwards": {
+  "title": "MCU: The Reign of Marvel Studios",
+  "search": "MCU: The Reign of Marvel Studios",
+  "creator": "Joanna Robinson",
+  "year": 2023,
+  "type": "book"
+ },
+ "guardians of the galaxy 3": {
+  "search": "Guardians of the Galaxy Vol. 3",
+  "year": 2023
+ },
+ "ashes of the unhewn throne 1 the empire s ruin brian stavely 2021": {
+  "title": "The Empire’s Ruin (Ashes of the Unhewn Throne #1)",
+  "search": "The Empire's Ruin",
+  "creator": "Brian Staveley",
+  "year": 2021,
+  "type": "book"
+ },
+ "zelda breath of the wild still": {
+  "search": "The Legend of Zelda: Breath of the Wild"
+ },
+ "zelda tears of the kingdom": {
+  "search": "The Legend of Zelda: Tears of the Kingdom"
+ },
+ "case of the golden idol dlc": {
+  "search": "The Case of the Golden Idol"
+ },
+ "animorphs 1 the invasion": {
+  "title": "The Invasion (Animorphs #1)",
+  "search": "The Invasion",
+  "creator": "K. A. Applegate",
+  "year": 1996,
+  "type": "book"
+ },
+ "new simpsons": {
+  "search": "The Simpsons"
+ },
+ "defunctland s disney channel s theme a history mystery": {
+  "title": "Disney Channel’s Theme: A History Mystery",
+  "creator": "Defunctland",
+  "type": "video",
+  "href": "https://www.youtube.com/watch?v=b_rjBWmc1iQ"
+ },
+ "metroid prime on steam deck": {
+  "search": "Metroid Prime"
+ },
+ "white lotus": {
+  "search": "The White Lotus"
+ },
+ "white lotus season 2": {
+  "search": "The White Lotus"
+ },
+ "star wars andor": {
+  "search": "Andor",
+  "year": 2022
+ },
+ "stanley parable ultra deluxe venom": {
+  "search": "The Stanley Parable: Ultra Deluxe"
+ },
+ "switch sports": {
+  "search": "Nintendo Switch Sports"
+ },
+ "elden ring s story": {
+  "search": "Elden Ring"
+ },
+ "elden ring nightreign s four player mod by yui": {
+  "search": "Elden Ring Nightreign"
+ },
+ "also horizon forbidden west": {
+  "title": "Horizon Forbidden West"
+ },
+ "death stranding ziplines infrastructure breaking a game": {
+  "search": "Death Stranding"
+ },
+ "12 minutes": {
+  "search": "Twelve Minutes"
+ },
+ "ghost of tsushima game pairing ac comparison": {
+  "title": "Ghost of Tsushima",
+  "search": "Ghost of Tsushima"
+ },
+ "probing in me2": {
+  "search": "Mass Effect 2"
+ },
+ "the plot by jean hanff korelitz": {
+  "year": 2021
+ },
+ "resident evil 8": {
+  "search": "Resident Evil Village"
+ },
+ "re viiiage maiden demo and demos like this": {
+  "search": "Resident Evil Village"
+ },
+ "this is a robbery": {
+  "type": "tv",
+  "year": 2021,
+  "search": "This Is a Robbery: The World’s Biggest Art Heist"
+ },
+ "monster hunter rise baybeeeee": {
+  "search": "Monster Hunter Rise"
+ },
+ "incomparable by brie and nikki bella": {
+  "type": "book"
+ },
+ "learning to parry in dark souls": {
+  "search": "Dark Souls"
+ },
+ "the ps5 experience": {
+  "type": "hardware",
+  "group": "PS5"
+ },
+ "got a ps5": {
+  "type": "hardware",
+  "group": "PS5"
+ },
+ "playing hitman from the beginning": {
+  "search": "Hitman"
+ },
+ "animal crossing halloween": {
+  "search": "Animal Crossing: New Horizons"
+ },
+ "borat 2": {
+  "search": "Borat Subsequent Moviefilm",
+  "year": 2020
+ },
+ "jackbox party pack 7": {
+  "search": "The Jackbox Party Pack 7"
+ },
+ "destiny 2 leviathan raid": {
+  "search": "Destiny 2"
+ },
+ "the 7 deaths of evelyn hardcastle by stuart turton": {
+  "search": "The Seven Deaths of Evelyn Hardcastle",
+  "year": 2018
+ },
+ "advanced steam deck or more like stream deck": {
+  "group": "Steam Deck"
+ },
+ "stream deck": {
+  "group": "Steam Deck"
+ },
+ "switch 2 tariffs": {
+  "group": "Switch 2"
+ },
+ "activision blizzard discrimination lawsuit": {
+  "group": "Activision Blizzard"
+ },
+ "on together update": {
+  "type": "other"
+ },
+ "on together": {
+  "type": "other"
+ },
+ "angel": {
+  "type": "tv",
+  "search": "Angel",
+  "year": 1999
+ },
+ "robocop": {
+  "year": 1987
+ },
+ "alone": {
+  "type": "tv",
+  "year": 2015
+ },
+ "plan b": {
+  "type": "movie",
+  "year": 2021
+ },
+ "the frustration of wanting to play cyberpunk 2077": {
+  "type": "article"
+ },
+ "josh strife hays diablo loot video https www youtube com watch v o17lbuzgjts": {
+  "title": "Diablo loot video",
+  "creator": "Josh Strife Hays",
+  "href": "https://www.youtube.com/watch?v=o17lBUZgjTs",
+  "type": "video"
+ },
+ "who is maud dixon by alexandra andrews": {
+  "title": "Who Is Maud Dixon?",
+  "creator": "Alexandra Andrews",
+  "type": "book",
+  "year": 2021
+ },
+ "a league of their own tv series": {
+  "year": 2022
+ },
+ "spyder games 2001 mtv soap opera": {
+  "title": "Spyder Games",
+  "search": "Spyder Games",
+  "year": 2001,
+  "type": "tv"
+ },
+ "death by lightning netflix": {
+  "type": "tv",
+  "year": 2025
+ },
+ "lisa jewell": {
+  "type": "other"
+ },
+ "dragon age the veilguard just went from a good rpg to one of bioware s most important games by ken shepard spoilers": {
+  "title": "Dragon Age: The Veilguard Just Went From A Good RPG To One Of BioWare’s Most Important Games",
+  "creator": "Ken Shepard",
+  "type": "article"
+ },
+ "learning to play piano when there is no recital by kelsey mckinney": {
+  "title": "Learning to Play Piano When There Is No Recital",
+  "creator": "Kelsey McKinney",
+  "href": "https://defector.com/learning-to-play-piano-when-there-is-no-recital",
+  "type": "article"
+ },
+ "behind f1 s velvet curtain by kate wagner": {
+  "title": "Behind F1’s Velvet Curtain",
+  "creator": "Kate Wagner",
+  "href": "https://web.archive.org/web/20240301170542/https://www.roadandtrack.com/car-culture/a46975496/behind-f1-velvet-curtain/",
+  "type": "article",
+  "summary": "Kate Wagner’s Road & Track feature, which the magazine removed days after publication; this is the archived copy."
+ },
+ "the pill by meg elison": {
+  "title": "The Pill",
+  "creator": "Meg Elison",
+  "href": "https://web.archive.org/web/20210215222359/https://blog.pmpress.org/2021/02/15/the-pill/",
+  "type": "article"
+ },
+ "psychodyssey": {
+  "href": "https://www.youtube.com/watch?v=AKoy_KMVIyU",
+  "type": "video"
+ },
+ "dan olson s video on nfts": {
+  "type": "video",
+  "href": "https://www.youtube.com/watch?v=YQ_xWvX1n9g"
+ },
+ "icebreakers new yorker documentary": {
+  "type": "video",
+  "href": "https://www.youtube.com/watch?v=3Qw7gImGn8U"
+ },
+ "the spectacular failure of the star wars hotel jenny nicholson": {
+  "type": "video",
+  "href": "https://www.youtube.com/watch?v=T0CpOYZZZW4"
+ }
+}

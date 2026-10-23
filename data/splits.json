@@ -1,0 +1,148 @@
+{
+ "inside out 1 2": [
+  {
+   "title": "Inside Out",
+   "type": "movie",
+   "year": 2015
+  },
+  {
+   "title": "Inside Out 2",
+   "type": "movie",
+   "year": 2024
+  }
+ ],
+ "scorcese double feature taxi driver king of comedy": [
+  {
+   "title": "Taxi Driver",
+   "type": "movie",
+   "year": 1976
+  },
+  {
+   "title": "The King of Comedy",
+   "type": "movie",
+   "year": 1982
+  }
+ ],
+ "scream 2 3": [
+  {
+   "title": "Scream 2",
+   "type": "movie",
+   "year": 1997
+  },
+  {
+   "title": "Scream 3",
+   "type": "movie",
+   "year": 2000
+  }
+ ],
+ "hocus pocus 1 2": [
+  {
+   "title": "Hocus Pocus",
+   "type": "movie",
+   "year": 1993
+  },
+  {
+   "title": "Hocus Pocus 2",
+   "type": "movie",
+   "year": 2022
+  }
+ ],
+ "persona 4 golden persona 5 royal": [
+  {
+   "title": "Persona 4 Golden",
+   "type": "game"
+  },
+  {
+   "title": "Persona 5 Royal",
+   "type": "game"
+  }
+ ],
+ "inventing anna tinder swindler": [
+  {
+   "title": "Inventing Anna",
+   "type": "tv"
+  },
+  {
+   "title": "The Tinder Swindler",
+   "type": "movie"
+  }
+ ],
+ "carrie salem s lot": [
+  {
+   "title": "Carrie",
+   "type": "book"
+  },
+  {
+   "title": "Salem's Lot",
+   "type": "book"
+  }
+ ],
+ "emily is away 1 3": [
+  {
+   "title": "Emily Is Away",
+   "type": "game"
+  },
+  {
+   "title": "Emily Is Away Too",
+   "type": "game"
+  },
+  {
+   "title": "Emily Is Away <3",
+   "type": "game"
+  }
+ ],
+ "murder mysteries moonflower murders by anthony horowitz the eighth detective by alex pavesi": [
+  {
+   "title": "Moonflower Murders",
+   "type": "book",
+   "creator": "Anthony Horowitz"
+  },
+  {
+   "title": "The Eighth Detective",
+   "type": "book",
+   "creator": "Alex Pavesi"
+  }
+ ],
+ "dredge vs dave the diver": [
+  {
+   "title": "Dredge",
+   "type": "game"
+  },
+  {
+   "title": "Dave the Diver",
+   "type": "game"
+  }
+ ],
+ "oscars watch game reimagined the godfather": [
+  {
+   "title": "Oscars Watch Game Reimagined",
+   "type": "other"
+  },
+  {
+   "title": "The Godfather",
+   "type": "movie"
+  }
+ ],
+ "fourth wing romantasy": [
+  {
+   "title": "Fourth Wing",
+   "type": "book"
+  },
+  {
+   "title": "Romantasy",
+   "type": "other"
+  }
+ ],
+ "fargo seasons 4 and 5 fx hulu": [
+  {
+   "title": "Fargo Season 4",
+   "type": "tv",
+   "year": 2020
+  },
+  {
+   "title": "Fargo Season 5",
+   "type": "tv",
+   "year": 2023
+  }
+ ]
+}

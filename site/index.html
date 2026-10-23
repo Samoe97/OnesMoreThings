@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>One’s More Things</title>
+<meta name="description" content="Every “One More Thing” recommendation from the hosts of the Triple Click podcast, searchable by host and type.">
+<meta property="og:title" content="One’s More Things">
+<meta property="og:description" content="Every recommendation from the hosts of Triple Click, with details and links.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23c2410c'/%3E%3Ctext x='50' y='70' font-size='62' font-weight='800' text-anchor='middle' fill='white' font-family='system-ui,sans-serif'%3E1%2B%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>One’s More Things</h1>
+  <p class="sub">Every recommendation from the hosts of <a href="https://maximumfun.org/podcasts/triple-click/" target="_blank" rel="noopener">Triple Click</a>: Kirk Hamilton, Jason Schreier, and Maddy Meyers, who never miss.</p>
+
+  <section id="hero" class="hero-car" aria-roledescription="carousel" aria-label="Most recent picks by type" hidden>
+    <div class="car-view"><div id="car-track" class="car-track"></div></div>
+    <button class="car-nav prev" id="car-prev" aria-label="Previous">‹</button>
+    <button class="car-nav next" id="car-next" aria-label="Next">›</button>
+    <div id="car-dots" class="car-dots"></div>
+  </section>
+
+  <section class="rec" aria-labelledby="rec-h">
+    <div class="rec-row">
+      <span id="rec-h" class="rec-lead">Recommend me <span id="rec-a">a</span></span>
+      <select id="rec-type" aria-label="Category"></select>
+      <span class="rec-lead">from</span>
+      <select id="rec-host" aria-label="Host"></select>
+      <button id="rec-roll" class="roll" type="button"><span class="die" aria-hidden="true">⚄</span> Re-roll</button>
+    </div>
+    <div id="rec-out" class="rec-out" aria-live="polite"></div>
+  </section>
+</header>
+  <div class="toolbar">
+    <div class="controls">
+      <div class="search"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m13 13 4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><input id="q" type="search" placeholder="Search titles…" aria-label="Search"></div>
+    <select id="minpicks" aria-label="Number of picks">
+      <option value="1">Any # of picks</option>
+      <option value="2">2+ picks</option>
+      <option value="3">3+ picks</option>
+      <option value="5">5+ picks</option>
+    </select>
+    <select id="sort" aria-label="Sort">
+      <option value="new">Newest first</option>
+      <option value="old">Oldest first</option>
+      <option value="az">Title A–Z</option>
+      <option value="host">Host</option>
+      <option value="most">Most picked</option>
+    </select>
+    </div>
+    <div class="filters">
+      <div class="seg" id="hosts" role="group" aria-label="Filter by host"></div>
+      <div class="tchips" id="types" role="group" aria-label="Filter by type"></div>
+      <button id="clear" class="clear" type="button" hidden>Clear filters</button>
+    </div>
+    <p id="count" class="count"></p>
+  </div>
+<main><ul id="list" class="list"></ul><p id="empty" hidden>Nothing matches those filters.</p></main>
+
+<footer class="credits">
+  <p>An unofficial fan project, not affiliated with Triple Click or Maximum Fun. Picks come from the show’s public RSS feed; “What was said” passages are machine transcripts quoted for reference, so listen to the episodes for the real thing.</p>
+  <p>Details and covers from <a href="https://www.themoviedb.org/" target="_blank" rel="noopener">TMDB</a> (this product uses the TMDB API but is not endorsed or certified by TMDB), <a href="https://www.igdb.com/" target="_blank" rel="noopener">IGDB</a>, <a href="https://openlibrary.org/" target="_blank" rel="noopener">Open Library</a>, <a href="https://www.deezer.com/" target="_blank" rel="noopener">Deezer</a>, <a href="https://podcasts.apple.com/" target="_blank" rel="noopener">Apple Podcasts</a> and <a href="https://www.wikipedia.org/" target="_blank" rel="noopener">Wikipedia</a>.</p>
+</footer>
+
+<div id="modal" class="modal" hidden>
+  <div class="card" role="dialog" aria-modal="true" aria-labelledby="m-title">
+    <div class="card-top">
+      <button class="chrome-btn" id="m-edit-btn" hidden>Edit</button>
+      <button class="chrome-btn x" id="close" aria-label="Close">×</button>
+    </div>
+
+    <div class="hero">
+      <div class="cover" id="m-cover"><img id="m-img" alt="" hidden><span id="m-ph" class="ph"></span></div>
+      <div class="hero-text">
+        <div class="badges"><span id="m-type" class="badge"></span><span id="m-rating" class="rate" hidden></span></div>
+        <h2 id="m-title"></h2>
+        <p id="m-sub" class="lead"></p>
+        <p id="m-tagline" class="tagline" hidden></p>
+        <div id="m-summary-wrap" hidden>
+          <p id="m-summary" class="summary clamp"></p>
+          <button id="m-more" class="linkbtn" hidden>Show more</button>
+        </div>
+      </div>
+    </div>
+
+    <p id="m-status" class="status" role="status"></p>
+
+    <div id="m-view">
+      <dl id="m-meta" class="meta-grid"></dl>
+      <section class="block said" id="m-said" hidden>
+        <h3>What was said</h3>
+        <div id="m-said-tabs" class="said-tabs"></div>
+        <p id="m-said-meta" class="said-meta"></p>
+        <p class="said-note">AI transcription from the episode audio, some names and wording may be off. Other hosts might react and there are no speaker names, sorry.</p>
+        <div id="m-said-body" class="said-body"></div>
+        <button id="m-said-more" class="linkbtn" hidden>Read the full passage</button>
+      </section>
+      <section class="block"><h3 id="m-times-h"></h3><ul id="m-times" class="times"></ul></section>
+      <section class="block"><h3>Find it on</h3><div id="m-links" class="links"></div></section>
+    </div>
+
+    <form id="m-edit" class="edit" hidden></form>
+  </div>
+</div>
+<script src="data.js"></script>
+<script src="said.js" onerror="void 0"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+# Publishes site/ to GitHub Pages, and on a schedule first pulls any new Triple Click episodes into site/data.js.
+#
+#  - Every Thursday (new episodes usually post ~04:00 UTC) and on demand: rebuild the data, commit it if anything changed, deploy.
+#  - Every push to main (for example the weekly transcript update from your computer): just deploy.
+#
+# One-time setup: Settings > Pages > Source = "GitHub Actions", and Settings > Secrets and variables > Actions >
+# add TMDB_API_KEY, IGDB_CLIENT_ID, IGDB_CLIENT_SECRET.
+name: Update picks and deploy
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "30 6 * * 4"    # Thursday 06:30 UTC
+    - cron: "30 18 * * 4"   # Thursday 18:30 UTC, in case the episode was late
+  workflow_dispatch:         # the "Run workflow" button on the Actions tab
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Pull new picks from the feed
+        if: github.event_name != 'push'
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+          IGDB_CLIENT_ID: ${{ secrets.IGDB_CLIENT_ID }}
+          IGDB_CLIENT_SECRET: ${{ secrets.IGDB_CLIENT_SECRET }}
+        run: |
+          if [ -z "$TMDB_API_KEY" ] || [ -z "$IGDB_CLIENT_ID" ] || [ -z "$IGDB_CLIENT_SECRET" ]; then
+            echo "::error::Add TMDB_API_KEY, IGDB_CLIENT_ID and IGDB_CLIENT_SECRET under Settings > Secrets and variables > Actions. (Running without them would replace good data with less detailed data.)"
+            exit 1
+          fi
+          node scripts/build-data.mjs
+
+      - name: Commit new picks
+        if: github.event_name != 'push'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/data.js data/enrichment-cache.json
+          if git diff --cached --quiet; then
+            echo "No new picks this time."
+          else
+            git commit -m "Update picks from the feed"
+            git pull --rebase
+            git push
+          fi
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

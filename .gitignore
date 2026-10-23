@@ -1,0 +1,13 @@
+# secrets
+keys.env
+.env
+
+# big or private local files
+data/transcripts/
+data/said.json
+data/said-report.txt
+node_modules/
+__pycache__/
+*.mp3
+*.wav
+Claude outputs/
