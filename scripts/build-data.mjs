@@ -577,6 +577,7 @@ async function processPick(p, { force = false } = {}) {
   p.tagline = e?.tagline || "";
   p.searchTitle = q;
   p.group = ov.group || null;
+  if (ov.tabletop) p.tabletop = true; // also listed under the Tabletop filter (board games, TTRPGs and their digital versions)
   if (ov.href) p.href = ov.href;
   // Articles and videos: link straight to the piece, using the episode's show notes when we have no link yet.
   if (p.type === "article" || p.type === "video") {

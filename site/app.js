@@ -1,6 +1,9 @@
 let DATA = (window.OMT_DATA && window.OMT_DATA.picks) || [];
 let CAN_EDIT = false, CURRENT = null, EDITING = false;
 const TYPE_LABEL = {game:"Games",movie:"Movies",tv:"TV",book:"Books",music:"Music",podcast:"Podcasts",article:"Articles",video:"Videos",hardware:"Hardware",other:"Other"};
+// "Tabletop" is a filter, not a type: board games, TTRPGs and their digital versions keep type "game" and carry p.tabletop.
+const inType = (p, t) => t === "tabletop" ? !!p.tabletop : p.type === t;
+const FILTER_LABEL = {...TYPE_LABEL, tabletop:"Tabletop"};
 const TYPE_ONE = {game:"Game",movie:"Movie",tv:"TV show",book:"Book",music:"Music",podcast:"Podcast",article:"Article",video:"Video",hardware:"Hardware",other:"Other"};
 const st = {hosts:new Set(), types:new Set(), q:"", sort:"new", min:1};
 const $ = id => document.getElementById(id);
@@ -124,7 +127,7 @@ function filtered(){
   const q = st.q.trim().toLowerCase();
   const r = DATA.filter(p =>
     (!st.hosts.size || st.hosts.has(p.host)) &&
-    (!st.types.size || st.types.has(p.type)) &&
+    (!st.types.size || [...st.types].some(t => inType(p, t))) &&
     (st.min <= 1 || timesFor(p).length >= st.min) &&
     (!q || (p.title+" "+p.raw+" "+(p.creator||"")).toLowerCase().includes(q)));
   const cmp = {
@@ -390,9 +393,9 @@ startCar();
 let lastRec = null;
 function initRec(){
   const ts = $("rec-type"), hs = $("rec-host");
-  const REC_LABEL = {tv:"TV show",music:"song or album",hardware:"piece of hardware",other:"wildcard",article:"article"};
+  const REC_LABEL = {tabletop:"tabletop game",tv:"TV show",music:"song or album",hardware:"piece of hardware",other:"wildcard",article:"article"};
   const lab = t => REC_LABEL[t] || (TYPE_ONE[t]||t).toLowerCase();
-  ts.innerHTML = '<option value="">thing</option>' + countBy(DATA, p => p.type).map(([t]) => `<option value="${t}">${lab(t)}</option>`).join("");
+  ts.innerHTML = '<option value="">thing</option>' + [...countBy(DATA, p => p.type).map(([t]) => t), ...(DATA.some(p => p.tabletop) ? ["tabletop"] : [])].map(t => `<option value="${t}">${lab(t)}</option>`).join("");
   const art = () => { $("rec-a").textContent = /^[aeiou]/i.test(ts.selectedOptions[0].textContent) ? "an" : "a"; };
   ts.addEventListener("change", art); art();
   hs.innerHTML = '<option value="">any host</option>' + countBy(DATA, p => p.host).map(([h]) => `<option value="${h}">${h}</option>`).join("");
@@ -402,7 +405,7 @@ function initRec(){
 function roll(){
   const t = $("rec-type").value, h = $("rec-host").value, out = $("rec-out");
   const seen = new Set(), pool = [];
-  for (const p of DATA){ if ((t && p.type !== t) || (h && p.host !== h)) continue; const k = groupKey(p); if (seen.has(k)) continue; seen.add(k); pool.push(p); }
+  for (const p of DATA){ if ((t && !inType(p, t)) || (h && p.host !== h)) continue; const k = groupKey(p); if (seen.has(k)) continue; seen.add(k); pool.push(p); }
   out.innerHTML = "";
   if (!pool.length){ out.innerHTML = '<p class="rec-none">Nothing matches that combination. Try another host or category.</p>'; lastRec = null; return; }
   let p; do { p = pool[Math.floor(Math.random()*pool.length)]; } while (pool.length > 1 && lastRec && p.id === lastRec.id);
@@ -460,7 +463,7 @@ function renderSaid(p, all){
 
 /* ---------- compact filters ---------- */
 let moreOpen = false;
-const MAIN_TYPES = ["game","tv","book","movie","music","podcast"];
+const MAIN_TYPES = ["game","tabletop","tv","book","movie","music","podcast"];
 function renderFilters(){
   // hosts: one segmented control. Hosts with only a handful of picks (guests) share a single "Guests" segment.
   const hc = countBy(DATA, p => p.host), main = hc.filter(([,n]) => n >= 15).map(([h]) => h), guests = hc.filter(([,n]) => n < 15).map(([h]) => h);
@@ -471,10 +474,10 @@ function renderFilters(){
   if (guests.length) mk("Guests", guests.every(g => st.hosts.has(g)), guests.join(", "), () => { const on = guests.every(g => st.hosts.has(g)); guests.forEach(g => on ? st.hosts.delete(g) : st.hosts.add(g)); render(); });
 
   // types: the common ones as small pills, the rest behind "More"
-  const tc = new Map(countBy(DATA, p => p.type)), box = $("types"); box.innerHTML = "";
-  const first = MAIN_TYPES.filter(t => tc.has(t)), rest = [...tc.keys()].filter(t => !first.includes(t));
+  const tc = new Map(countBy(DATA, p => p.type)); if (DATA.some(p => p.tabletop)) tc.set("tabletop", DATA.filter(p => p.tabletop).length); const box = $("types"); box.innerHTML = "";
+  const byCount = (x, y) => tc.get(y) - tc.get(x), first = MAIN_TYPES.filter(t => tc.has(t)).sort(byCount), rest = [...tc.keys()].filter(t => !first.includes(t)).sort(byCount); // most picks first
   if (rest.some(t => st.types.has(t))) moreOpen = true;
-  const pill = t => { const b = document.createElement("button"); b.type = "button"; b.className = "fchip"; b.textContent = TYPE_LABEL[t] || t; b.title = `${tc.get(t)} picks`; b.setAttribute("aria-pressed", st.types.has(t)); b.onclick = () => { st.types.has(t) ? st.types.delete(t) : st.types.add(t); render(); }; return b; };
+  const pill = t => { const b = document.createElement("button"); b.type = "button"; b.className = "fchip"; b.textContent = FILTER_LABEL[t] || t; b.title = `${tc.get(t)} picks`; b.setAttribute("aria-pressed", st.types.has(t)); b.onclick = () => { st.types.has(t) ? st.types.delete(t) : st.types.add(t); render(); }; return b; };
   first.forEach(t => box.append(pill(t)));
   if (rest.length){
     const m = document.createElement("button"); m.type = "button"; m.className = "fchip more"; m.setAttribute("aria-expanded", moreOpen);
