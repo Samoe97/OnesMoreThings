@@ -45981,5 +45981,63 @@
    "applepodcasts": "https://podcasts.apple.com/us/podcast/just-king-things/id1525585763?uo=4"
   },
   "score": 2
- }
+ },
+ "v211|ace combat 8 wings of theve|||": {
+  "type": "game",
+  "matchedTitle": "Ace Combat 8: Wings of Theve",
+  "year": 2026,
+  "summary": "Soar through the skies and rise above every challenge to earn your place among the elite. Engage in intense aerial combat to dominate the battlefield with powerful weapons. Experience a breathtaking campaign filled with high-stakes missions, hard choices, and deep squad connections.",
+  "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob0h1.jpg",
+  "ids": {
+   "igdb": "ace-combat-8-wings-of-theve"
+  },
+  "meta": [
+   [
+    "Developer",
+    "Bandai Namco Aces Inc."
+   ],
+   [
+    "Publisher",
+    "Bandai Namco Entertainment"
+   ],
+   [
+    "Released",
+    "October 2, 2026"
+   ],
+   [
+    "Platforms",
+    "Series X|S, PC, PS5"
+   ],
+   [
+    "Genre",
+    "Shooter, Simulator, Arcade"
+   ],
+   [
+    "Themes",
+    "Action, Science fiction, Drama, Warfare"
+   ],
+   [
+    "Modes",
+    "Single player, Multiplayer, Co-operative"
+   ],
+   [
+    "Franchise",
+    "Ace Combat"
+   ],
+   [
+    "Rating",
+    "90/100 (11 ratings on IGDB)"
+   ]
+  ],
+  "links": {
+   "igdb": "https://www.igdb.com/games/ace-combat-8-wings-of-theve",
+   "steam": "https://store.steampowered.com/app/2288340",
+   "official": "https://store.playstation.com/en-us/concept/10011942"
+  },
+  "score": 2
+ },
+ "v211|dykes to watch out for||book|alison bechdel": null,
+ "v211|dykes to watch out for|||alison bechdel": null,
+ "v211|gandolfini jim tony and the life of a legend||book|jason bailey": null,
+ "v211|gandolfini jim tony and the life of a legend|||jason bailey": null
 }
