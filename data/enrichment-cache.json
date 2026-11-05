@@ -10976,7 +10976,26 @@
   },
   "score": 2
  },
- "v211|pokopia||game|": null,
+ "v211|pokopia||game|": {
+  "type": "game",
+  "matchedTitle": "Pokopia Recomp",
+  "year": null,
+  "summary": "Pokémon Pokopia (Switch 2) recompiled to run natively on Windows.",
+  "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/codac2.jpg",
+  "ids": {
+   "igdb": "pokopia-recomp"
+  },
+  "meta": [
+   [
+    "Platforms",
+    "PC"
+   ]
+  ],
+  "links": {
+   "igdb": "https://www.igdb.com/games/pokopia-recomp"
+  },
+  "score": 1
+ },
  "v211|ratcheteer dx||game|": {
   "type": "game",
   "matchedTitle": "Ratcheteer DX",
@@ -46039,5 +46058,164 @@
  "v211|dykes to watch out for||book|alison bechdel": null,
  "v211|dykes to watch out for|||alison bechdel": null,
  "v211|gandolfini jim tony and the life of a legend||book|jason bailey": null,
- "v211|gandolfini jim tony and the life of a legend|||jason bailey": null
+ "v211|gandolfini jim tony and the life of a legend|||jason bailey": null,
+ "v211|avatar seven havens|||": {
+  "type": "tv",
+  "matchedTitle": "Avatar: Seven Havens",
+  "year": 2026,
+  "summary": "In a world shattered by a devastating cataclysm, a young Earthbender discovers she's the new Avatar after Korra. But in this dangerous era, that title marks her as humanity's destroyer, not its savior. Hunted by both human and spirit enemies, she and her long-lost twin must uncover their mysterious origins and save the Seven Havens before civilization's last strongholds collapse.",
+  "tagline": "New legends will rise.",
+  "image": "https://image.tmdb.org/t/p/w500/u62d0BPqsdv2TUDifcMmoePbHPL.jpg",
+  "ids": {
+   "tmdb": 284833
+  },
+  "meta": [
+   [
+    "Created by",
+    "Michael Dante DiMartino, Bryan Konietzko"
+   ],
+   [
+    "Network",
+    "Paramount+"
+   ],
+   [
+    "Starring",
+    "Saheli Khan, Aishwarya 'Aishu' Devan, Major Curda, Akshay Khanna, Sakina Jaffrey"
+   ],
+   [
+    "Genre",
+    "Animation, Action & Adventure, Sci-Fi & Fantasy, Family"
+   ],
+   [
+    "Seasons",
+    "1 season, 13 episodes"
+   ],
+   [
+    "Status",
+    "Returning Series"
+   ],
+   [
+    "First aired",
+    "October 9, 2026"
+   ],
+   [
+    "Rated",
+    "TV-PG"
+   ],
+   [
+    "Country",
+    "United States of America, United States"
+   ],
+   [
+    "Language",
+    "English"
+   ],
+   [
+    "Studio",
+    "Avatar Studios, Nickelodeon Animation Studio"
+   ],
+   [
+    "Rating",
+    "8.9/10 (184 votes on TMDB)"
+   ]
+  ],
+  "links": {
+   "tmdb": "https://www.themoviedb.org/tv/284833",
+   "imdb": "https://www.imdb.com/title/tt35854736/",
+   "official": "https://www.paramountplus.com/shows/avatar-seven-havens"
+  },
+  "score": 2
+ },
+ "v211|of the devil|||": {
+  "type": "game",
+  "matchedTitle": "Of the Devil",
+  "year": 2025,
+  "summary": "Immerse yourself in neon, smoke, and high-stakes legal gambles as a Defense Attorney with uniquely Killer insights in this diabolically stylish visual novel adventure game.",
+  "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/coaq5t.jpg",
+  "ids": {
+   "igdb": "of-the-devil"
+  },
+  "meta": [
+   [
+    "Developer",
+    "Nth Circle"
+   ],
+   [
+    "Publisher",
+    "Nth Circle"
+   ],
+   [
+    "Released",
+    "February 6, 2025"
+   ],
+   [
+    "Platforms",
+    "PC, Mac"
+   ],
+   [
+    "Genre",
+    "Point-and-click, Puzzle, Adventure, Indie, Visual Novel"
+   ],
+   [
+    "Themes",
+    "Science fiction, Thriller, Mystery"
+   ],
+   [
+    "Modes",
+    "Single player"
+   ]
+  ],
+  "links": {
+   "igdb": "https://www.igdb.com/games/of-the-devil",
+   "steam": "https://store.steampowered.com/app/2739630/of_the_Devil/",
+   "itch": "https://ofthedevilgame.itch.io/of-the-devil",
+   "official": "https://otdgame.carrd.co/"
+  },
+  "score": 2
+ },
+ "v211|funeral for the sun|||": {
+  "type": "game",
+  "matchedTitle": "Funeral for the Sun",
+  "year": 2026,
+  "summary": "Search the ashes of an abandoned Latin American town and uncover 400 years of secrets. An epic non-linear mystery where you travel back in time and untangle the history of a community cursed by generations of supernatural forces.",
+  "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/cocvzv.jpg",
+  "ids": {
+   "igdb": "funeral-for-the-sun"
+  },
+  "meta": [
+   [
+    "Developer",
+    "Nicolás Cid Delgado"
+   ],
+   [
+    "Publisher",
+    "Nicolás Cid Delgado"
+   ],
+   [
+    "Released",
+    "November 9, 2026"
+   ],
+   [
+    "Platforms",
+    "PC, Mac"
+   ],
+   [
+    "Genre",
+    "Adventure, Indie"
+   ],
+   [
+    "Themes",
+    "Mystery"
+   ],
+   [
+    "Modes",
+    "Single player"
+   ]
+  ],
+  "links": {
+   "igdb": "https://www.igdb.com/games/funeral-for-the-sun",
+   "steam": "https://store.steampowered.com/app/4088360"
+  },
+  "score": 2
+ }
 }
