@@ -46217,5 +46217,102 @@
    "steam": "https://store.steampowered.com/app/4088360"
   },
   "score": 2
+ },
+ "v211|queen s domain|||": {
+  "type": "game",
+  "matchedTitle": "Queen's Domain",
+  "year": 2026,
+  "summary": "A retro-fantasy action RPG with brutal combat and traversal-focused exploration. Embark on a quest to find your father who disappeared on the mysterious Isle of Neasied, where sinister forces gather, secrets hide everywhere, and the sleeping Queen has begun to stir…",
+  "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/coda8t.jpg",
+  "ids": {
+   "igdb": "queens-domain"
+  },
+  "meta": [
+   [
+    "Developer",
+    "Freshly Baked Games"
+   ],
+   [
+    "Publisher",
+    "Future Friends Games"
+   ],
+   [
+    "Released",
+    "October 30, 2026"
+   ],
+   [
+    "Platforms",
+    "Series X|S, Switch 2, PC, PS5"
+   ],
+   [
+    "Genre",
+    "Role-playing (RPG), Adventure, Indie"
+   ],
+   [
+    "Themes",
+    "Action, Fantasy, Survival, Mystery"
+   ],
+   [
+    "Modes",
+    "Single player"
+   ],
+   [
+    "Rating",
+    "95/100 (1 ratings on IGDB)"
+   ]
+  ],
+  "links": {
+   "igdb": "https://www.igdb.com/games/queens-domain",
+   "steam": "https://store.steampowered.com/app/1799840",
+   "official": "https://bsky.app/profile/queensdomain.bsky.social"
+  },
+  "score": 2
+ },
+ "v211|thumbs down|||": {
+  "type": "movie",
+  "matchedTitle": "Thumbs Down",
+  "year": 1968,
+  "summary": "In this cinema-verite documentary, a teenage youth group called Thumbs Down decides \"to bring Christ to their neighborhood\" by holding an anti-war Mass at their conservative Chicago parish. Neither militants nor hippies, they simply believe that Christianity means social action and concern with issues. They present this belief to the community and the confrontation reveals the deepening crisis of communication between the young Christians and their parents, priest, and neighbors.",
+  "tagline": "",
+  "image": null,
+  "ids": {
+   "tmdb": 374372
+  },
+  "meta": [
+   [
+    "Director",
+    "Gerald Temaner, Gordon Quinn"
+   ],
+   [
+    "Studio",
+    "Kartemquin Films"
+   ],
+   [
+    "Genre",
+    "Documentary"
+   ],
+   [
+    "Released",
+    "January 1, 1968"
+   ],
+   [
+    "Runtime",
+    "1h 41m"
+   ],
+   [
+    "Country",
+    "United States of America, United States"
+   ],
+   [
+    "Language",
+    "English"
+   ]
+  ],
+  "links": {
+   "tmdb": "https://www.themoviedb.org/movie/374372",
+   "imdb": "https://www.imdb.com/title/tt0482279/",
+   "letterboxd": "https://letterboxd.com/tmdb/374372/"
+  },
+  "score": 2
  }
 }
