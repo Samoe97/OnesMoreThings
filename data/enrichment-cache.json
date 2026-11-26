@@ -46315,5 +46315,99 @@
   },
   "score": 2
  },
- "v211|switch sports resort||hardware|": null
+ "v211|switch sports resort||hardware|": null,
+ "v211|lindsay ellis s cruise line video|||": null,
+ "v211|the men who stare at goats||book|jon ronson": {
+  "type": "book",
+  "matchedTitle": "The men who stare at goats",
+  "year": 2004,
+  "creator": "Jon Ronson",
+  "summary": "A journalist tells intertwined anecdotes about US military forays into New Age and paranormal methods of war.",
+  "image": "https://covers.openlibrary.org/b/id/473236-L.jpg",
+  "ids": {
+   "openlibrary": "/works/OL5844095W"
+  },
+  "meta": [
+   [
+    "Author",
+    "Jon Ronson"
+   ],
+   [
+    "Genre",
+    "Occultism, Animals, Psychological warfare, Military aspects, War use"
+   ],
+   [
+    "Publisher",
+    "Simon & Schuster, Brand: Simon Schuster"
+   ],
+   [
+    "First published",
+    "2004"
+   ],
+   [
+    "Pages",
+    "272"
+   ],
+   [
+    "Language",
+    "English"
+   ],
+   [
+    "Editions",
+    "17"
+   ],
+   [
+    "ISBN",
+    "9780330375474"
+   ]
+  ],
+  "links": {
+   "openlibrary": "https://openlibrary.org/works/OL5844095W",
+   "goodreads": "https://www.goodreads.com/book/show/1825",
+   "storygraph": "https://app.thestorygraph.com/browse?search_term=9780330375474"
+  },
+  "score": 2
+ },
+ "v211|monomoon|||": {
+  "type": "game",
+  "matchedTitle": "Monomoon",
+  "year": 2026,
+  "summary": "In MONOMOON, the way forward is reserved for the knowing and the daring. Guided by moonlight, you’ll uncover hidden truths and wander through a tiny and mysterious open world.",
+  "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/coax94.jpg",
+  "ids": {
+   "igdb": "monomoon"
+  },
+  "meta": [
+   [
+    "Developer",
+    "Gentle Giant"
+   ],
+   [
+    "Publisher",
+    "Gentle Giant"
+   ],
+   [
+    "Released",
+    "November 11, 2026"
+   ],
+   [
+    "Platforms",
+    "PC"
+   ],
+   [
+    "Genre",
+    "Platform, Puzzle, Adventure, Indie"
+   ],
+   [
+    "Modes",
+    "Single player"
+   ]
+  ],
+  "links": {
+   "igdb": "https://www.igdb.com/games/monomoon",
+   "steam": "https://store.steampowered.com/app/3285880",
+   "official": "https://www.gentlegiantgames.com/"
+  },
+  "score": 2
+ }
 }
